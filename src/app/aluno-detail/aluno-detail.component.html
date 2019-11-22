@@ -1,0 +1,11 @@
+<div *ngIf="aluno">
+
+  <h2>{{aluno.nome | uppercase}} Details</h2>
+  <div><span>matrícula: </span>{{aluno.matricula}}</div>
+  <div>
+    <label>nome:
+      <input [(ngModel)]="matricula.nome" placeholder="nome"/>
+    </label>
+  </div>
+
+</div>

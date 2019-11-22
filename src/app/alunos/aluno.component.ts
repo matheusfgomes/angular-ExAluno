@@ -1,3 +1,25 @@
-import{Component, OnInit} from '@angular/core';
-import {Aluno} from '../aluno';
-import {Alunos} from '../mock-alunos';
+import { Component, OnInit } from '@angular/core';
+import { Aluno } from '../aluno';
+import { ALUNOS } from '../mock-alunos';
+
+
+@Component({
+  selector: 'app-alunos',
+  templateUrl: './aluno.component.html',
+  styleUrls: ['./aluno.component.css']
+})
+
+export class AlunoComponent implements OnInit {
+
+  aluno = ALUNOS;
+  selectedAluno: Aluno;
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+  onSelect(aluno: Aluno): void {
+    this.selectedAluno = aluno;
+  }
+}

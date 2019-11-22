@@ -1,7 +1,7 @@
 <h2>Lista de Alunos</h2>
-<ul class="alunos">
-  <li *ngFor="let me heroes" [class.selected="aluno === selectedAluno" (click)="onSelect(hero)"]>
-    <span class="badge">{{aluno.matricula}}º</span>  {{aluno.nome}}
+<ul class="heroes">
+  <li *ngFor="let me heroes" [class.selected="aluno === selectedAluno" (click)="onSelect(aluno)"]>
+    <span class="badge">{{aluno.matricula}}</span>  {{aluno.nome}}
   </li>
 </ul>
 
