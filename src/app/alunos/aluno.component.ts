@@ -4,7 +4,7 @@ import { ALUNOS } from '../mock-alunos';
 
 
 @Component({
-  selector: 'app-alunos',
+  selector: 'app-aluno',
   templateUrl: './aluno.component.html',
   styleUrls: ['./aluno.component.css']
 })

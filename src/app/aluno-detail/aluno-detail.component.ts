@@ -6,8 +6,8 @@ import { Aluno } from '../aluno';
   templateUrl: './aluno-detail.component.html',
   styleUrls: ['./aluno-detail.component.css']
 })
-export class HeroDetailComponent implements OnInit {
-  @Input() hero: Aluno;
+export class AlunoDetailComponent implements OnInit {
+  @Input() aluno: Aluno;
 
   constructor() { }
 
